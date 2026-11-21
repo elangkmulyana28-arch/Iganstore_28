@@ -1,0 +1,270 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background: #f8f3ed;
+  color: #5b493d;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.cover {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+    linear-gradient(rgba(45,35,30,.25), rgba(45,35,30,.25)),
+    linear-gradient(135deg, #c9b8a5, #e8d9c8, #b7a38d);
+  padding: 30px;
+}
+
+.cover-inner {
+  width: 100%;
+  max-width: 450px;
+  padding: 45px 25px;
+  border: 1px solid rgba(255,255,255,.75);
+  background: rgba(255,255,255,.18);
+  backdrop-filter: blur(5px);
+  color: white;
+}
+
+.eyebrow {
+  letter-spacing: 5px;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+
+.cover h1,
+.hero h1 {
+  font-size: clamp(35px, 8vw, 55px);
+  font-weight: normal;
+  margin: 20px 0;
+}
+
+.tanggal {
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+.kepada {
+  margin: 45px 0 30px;
+  padding: 25px;
+  background: rgba(255,255,255,.2);
+}
+
+.kepada h2 {
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+button {
+  background: #725843;
+  color: white;
+  border: 1px solid white;
+  padding: 15px 30px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-family: inherit;
+  transition: .3s;
+}
+
+button:hover {
+  background: #4e3c2c;
+}
+
+#isiUndangan {
+  animation: muncul 1s ease;
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 70px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f3e9dc;
+}
+
+.foto-pengantin {
+  width: 90%;
+  max-width: 420px;
+  margin-top: 40px;
+}
+
+.foto-pengantin img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.sambutan,
+.mempelai,
+.acara,
+.galeri,
+.penutup {
+  padding: 80px 25px;
+  max-width: 850px;
+  margin: auto;
+  line-height: 2;
+}
+
+.sambutan h2,
+.mempelai h2,
+.acara h2,
+.galeri h2,
+.penutup h2 {
+  font-weight: normal;
+  margin: 25px 0;
+}
+
+.pasangan {
+  margin-top: 35px;
+}
+
+.orang {
+  padding: 30px 15px;
+}
+
+.orang h3 {
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.dan {
+  font-size: 35px;
+  margin: 15px;
+}
+
+.detail-acara {
+  margin: 35px 0;
+  padding: 30px;
+  border: 1px solid #d6c3ae;
+}
+
+.detail-acara h3 {
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.alamat {
+  margin: 30px 0;
+}
+
+.maps {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #725843;
+  color: white;
+  text-decoration: none;
+}
+
+.galeri-foto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.galeri-foto img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.penutup {
+  background: #e8d9c8;
+}
+
+@keyframes muncul {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .cover-inner {
+    padding: 35px 20px;
+  }
+
+  .sambutan,
+  .mempelai,
+  .acara,
+  .galeri,
+  .penutup {
+    padding: 60px 20px;
+  }
+}
+
+/* AMPLOP DIGITAL */
+.amplop {
+  padding: 80px 25px;
+  max-width: 850px;
+  margin: auto;
+  line-height: 2;
+}
+
+.amplop h2 {
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+
+.rekening {
+  margin: 35px auto;
+  padding: 35px 20px;
+  max-width: 400px;
+  border: 1px solid #d6c3ae;
+  background: #efe4d7;
+}
+
+.rekening h3 {
+  font-weight: normal;
+}
+
+.rekening button {
+  margin-top: 20px;
+}
+
+/* UCAPAN VIA WHATSAPP */
+.ucapan {
+  padding: 80px 25px;
+  max-width: 850px;
+  margin: auto;
+  line-height: 2;
+}
+
+.form-ucapan {
+  max-width: 500px;
+  margin: 30px auto 0;
+}
+
+.form-ucapan input,
+.form-ucapan textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #d6c3ae;
+  background: #fffaf5;
+  font-family: inherit;
+  font-size: 16px;
+  color: #5b493d;
+}
+
+.form-ucapan textarea {
+  resize: vertical;
+}
+
+.form-ucapan button {
+  width: 100%;
+  margin-top: 15px;
+}
